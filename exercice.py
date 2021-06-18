@@ -84,6 +84,14 @@ def creerLivresRecettes(chemin1: str = None):
         json.dump(recipes, outfile, indent=4)
 
 
+def exercice5(chemin: str):
+    listNumbers = []
+    with open(chemin) as f:
+        for line in f:
+            line = line.split()
+            numbers = [int(char) for char in line if char.isdigit()]
+            listNumbers.extend(numbers)
+    return sorted(listNumbers)
 
 
 
@@ -101,8 +109,8 @@ if __name__ == '__main__':
     print(comparerDeuxFichiers("exemple.txt", "ex2.txt"))
     recopieEtTriple("exemple.txt", "exempleTriple.txt")
     associeNotes("notes.txt", "notesLettres.txt")
-    creerLivresRecettes("./recettes.txt")
-    #print(exercice5("./exemple.txt"))
+    #creerLivresRecettes("./recettes.json")
+    print(exercice5("./exemple.txt"))
     #exercice6("./notes.txt", "./notes_skip.txt")
 
     pass
