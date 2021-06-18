@@ -1,0 +1,18 @@
+{
+    "spag": [
+        "spag",
+        "fromage",
+        "tomate",
+        "sel",
+        "huile",
+        "poivre",
+        "ail",
+        "onion"
+    ],
+    "burger": [
+        "meat",
+        "bun",
+        "tomato",
+        "cheese"
+    ]
+}
